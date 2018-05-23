@@ -1,17 +1,17 @@
 apm-server:
   host: 0.0.0.0:8200
   ssl.enabled: true
-  ssl.certificate: "/ssl/server.crt"
-  ssl.key: "/ssl/server.key"
+  ssl.certificate: ${SSL_CERTIFICATE}
+  ssl.key: ${SSL_KEY}
 
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
-  username: "norak"
-  password: "norak@123"
+  username: ${USERNAME}
+  password: ${PASSWORD}
 
 setup.kibana:
   host: "kibana:5601"
-  username: "norak"
-  password: "norak@123"
+  username: ${USERNAME}
+  password: ${PASSWORD}
 
 setup.dashboarded.enabled: true
