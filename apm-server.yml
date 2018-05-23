@@ -6,12 +6,12 @@ apm-server:
 
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
-  username: ${USERNAME}
-  password: ${PASSWORD}
+  username: admin
+  password: elasticsearch
 
 setup.kibana:
   host: "kibana:5601"
-  username: ${USERNAME}
-  password: ${PASSWORD}
+  username: admin
+  password: kibana
 
 setup.dashboarded.enabled: true
