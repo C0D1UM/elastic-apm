@@ -45,6 +45,11 @@ services:
     depends_on:
       - elasticsearch
       - kibana
+    environment:
+      - SSL_CERTIFICATE=/ssl/
+      - SSL_KEY=/ssl/
+      - USERNAME=norak
+      - PASSWORD=norak@123
 
 
 volumes:
